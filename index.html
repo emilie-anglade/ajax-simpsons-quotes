@@ -19,8 +19,8 @@
   <section class="section">
     <div class="container">
       <h1 class="title">Simpsons'quotes</h1>
-      <p>Reload for another quote!</p>
-
+      <!-- <p>Reload for another quote!</p> -->
+      <button id="button">Click for another quote</button>
       <div class="content" id="simpson">
       </div>
     </div>
@@ -52,6 +52,9 @@ function fetchSimpsonJSON() {
 }
 
 fetchSimpsonJSON();
+
+document.querySelector('#button').addEventListener("click", fetchSimpsonJSON);
+
 
   </script>
 </body>
